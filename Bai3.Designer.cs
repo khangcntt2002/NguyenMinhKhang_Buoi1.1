@@ -32,9 +32,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txt_Nhap = new TextBox();
+            txt_Kq = new TextBox();
+            txt_N = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
@@ -79,26 +79,27 @@
             label4.Text = "SNT nhỏ hơn n:";
             label4.Click += label3_Click;
             // 
-            // textBox1
+            // txt_Nhap
             // 
-            textBox1.Location = new Point(170, 85);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(225, 36);
-            textBox1.TabIndex = 2;
+            txt_Nhap.Location = new Point(170, 85);
+            txt_Nhap.Name = "txt_Nhap";
+            txt_Nhap.Size = new Size(225, 36);
+            txt_Nhap.TabIndex = 2;
+            txt_Nhap.TextChanged += txt_Nhap_TextChanged;
             // 
-            // textBox2
+            // txt_Kq
             // 
-            textBox2.Location = new Point(170, 127);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(225, 36);
-            textBox2.TabIndex = 2;
+            txt_Kq.Location = new Point(170, 127);
+            txt_Kq.Name = "txt_Kq";
+            txt_Kq.Size = new Size(225, 36);
+            txt_Kq.TabIndex = 2;
             // 
-            // textBox3
+            // txt_N
             // 
-            textBox3.Location = new Point(198, 179);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(225, 36);
-            textBox3.TabIndex = 2;
+            txt_N.Location = new Point(198, 179);
+            txt_N.Name = "txt_N";
+            txt_N.Size = new Size(225, 36);
+            txt_N.TabIndex = 2;
             // 
             // button1
             // 
@@ -109,6 +110,7 @@
             button1.TabIndex = 3;
             button1.Text = "Thoát";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Bai3
             // 
@@ -116,19 +118,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(528, 280);
             Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txt_N);
+            Controls.Add(txt_Kq);
+            Controls.Add(txt_Nhap);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "Bai3";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Bai3";
             WindowState = FormWindowState.Maximized;
+            Load += Bai3_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -143,5 +146,8 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private Button button1;
+        private TextBox txt_Kq;
+        private TextBox txt_Nhap;
+        private TextBox txt_N;
     }
 }

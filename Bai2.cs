@@ -47,6 +47,7 @@ namespace NguyenMinhKhang_Buoi1._1
 
             }
             txt_nhapso.Text= " ";
+
         }
     }
 }

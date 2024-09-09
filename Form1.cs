@@ -20,11 +20,17 @@ namespace NguyenMinhKhang_Buoi1._1
 
         private void bài2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Bai2 ndsvtt= new Bai2();
+            Bai2 ndsvtt = new Bai2();
             ndsvtt.Show();
         }
 
         private void bài3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bai3 ndsvtt = new Bai3();
+            ndsvtt.Show();
+        }
+
+        private void bài4ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

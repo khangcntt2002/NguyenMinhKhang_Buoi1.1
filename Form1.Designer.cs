@@ -81,6 +81,7 @@
             bài4ToolStripMenuItem.Name = "bài4ToolStripMenuItem";
             bài4ToolStripMenuItem.Size = new Size(180, 22);
             bài4ToolStripMenuItem.Text = "Bài 4";
+            bài4ToolStripMenuItem.Click += bài4ToolStripMenuItem_Click;
             // 
             // bài5ToolStripMenuItem
             // 
